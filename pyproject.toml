@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "reponder-boilerplate"
+version = "0.1.0"
+description = ""
+authors = ["Soichiro Ota <libarta.official@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+Flask = "^2.0.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+mypy = "^0.910"
+black = "^21.10b0"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+pytest-cov = "^3.0.0"
+pytest-sugar = "^0.9.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 119
+
+[tool.isort]
+profile = "black"
+line_length = 119
